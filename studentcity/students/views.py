@@ -22,7 +22,7 @@ def about(request):
 def students(request):
     return HttpResponse("Студенты")
 def dormitory(request):
-    return HttpResponse("Преподаватели")
+    return HttpResponse("Общежития")
 def login(request):
     return HttpResponse("Авторизация")
 

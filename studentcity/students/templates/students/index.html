@@ -2,12 +2,13 @@
     <h1>{{ title }}</h1>
     <ul>
          {% for st in students %}
-   <li>
-       <a href="{{ st.get_absolute_url }}">
-           {{ st.first_name }}
-           {{ st.last_name | upper }}
-       </a>
-   </li>
+ <li>
+ <a href="{{ st.get_absolute_url }}">
+ {{ st.first_name }}
+ {{ st.last_name | upper }}
+ </a>
+ {{ st.group }}
+ </li>
 {% endfor %}
     </ul>
     <p> Всего студентов: {{ students | length }}</p>
